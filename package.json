@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.79.3"
+  },
+  "name": "site-compile",
+  "version": "1.0.0",
+  "description": "A simple sass compile and minify js config.",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded css/site.scss:css/site.css",
+    "sass-prod": "sass --no-source-map --style=compressed css/site.scss:css/site.min.css",
+    "min-js": "uglifyjs js/site.js -o js/site.min.js"
+  }
+}
